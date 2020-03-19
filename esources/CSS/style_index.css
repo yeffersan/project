@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: #111;
+    font-family: "Montserrat-Light";
+}
+
+@font-face{
+    font-family: 'Montserrat-Light';
+    src:url(../../Resources/Font/Montserrat/Montserrat-Light.otf);
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src:url(../../Resources/Font/Montserrat/Montserrat-Thin.otf);
+}
+
+
+section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+section > div{
+    width: 35%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    position: relative;
+}
+section > div > h1{
+    margin: 0 auto;
+    width: 100%;
+    height: 150px;
+    background-image: url(../Imgs/icons2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+section > div > h2{
+    font-weight: bold;
+    font-size: 8pt;
+    /*position: absolute*;
+    left: 0; top: 50%; right: 0;
+    background: linear-gradient(to left, transparent, #000, transparent);*/
+    margin-top: 5%;
+    padding-top: 2%; padding-bottom: 2%;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 0;
+    background-image: url(../Imgs/Paulista_Avenue,_S%C3%A3o_Paulo,_Brazil.jpg);
+     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.background:before{
+    background-color: #000;
+    opacity: .75;
+    z-index: 1;
+}
+.background:after, .background:before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+.background:after{
+    box-shadow: inset 0 0 2000px rgba(0, 0, 0, 1);
+    filter: blur(5px);
+    background: inherit;
+    transform: scale(1.2);
+}
+footer{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+}
+footer > h1{
+    width: 100px;
+    height: 45%;
+    background-image: url(../Imgs/JS.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+footer > h2{
+    font-family: "Montserrat-Bold";
+    font-size: 7.5pt;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 5pt;
+    text-transform: uppercase;
+}
