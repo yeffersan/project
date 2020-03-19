@@ -20,7 +20,7 @@ body{
     src:url(../../Resources/Font/Montserrat/Montserrat-Light.otf);
 }
 @font-face{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat-Thin';
     src:url(../../Resources/Font/Montserrat/Montserrat-Thin.otf);
 }
 
@@ -114,7 +114,7 @@ footer > h1{
     background-size: contain;
 }
 footer > h2{
-    font-family: "Montserrat-Bold";
+    font-family: "Montserrat-Thin";
     font-size: 7.5pt;
     text-align: center;
     font-weight: 100;
